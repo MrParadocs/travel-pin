@@ -1,0 +1,15 @@
+/* geocoder.css */
+
+.leaflet-control-geocoder {
+   height: 40px;
+   border-radius: 20px;
+   min-width: 200%;
+   left: -500px;
+   top: 5px;
+}
+
+.leaflet-control-geocoder-form {
+   font-size: 15px;
+   border-radius: 20px;
+   height: 40px;
+}

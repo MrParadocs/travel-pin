@@ -1,0 +1,232 @@
+body {
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 2px;
+  position: inherit;
+  height: 80.5px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonTitle {
+  font-size: 25px;
+}
+
+.reloadIcon {
+  color: gold;
+}
+
+.reloadbtn {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.reloadbtn::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: gold;
+  transition: width .3s;
+}
+
+.reloadbtn:hover::after {
+  width: 100%;
+}
+
+.logoutIcon {
+  color: tomato;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.logoutbtn {
+  float: right;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.logoutbtn::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: tomato;
+  transition: width .3s;
+}
+
+.logoutbtn:hover::after {
+  width: 100%;
+}
+
+.name {
+  float: left;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.nameIcon {
+  color: greenyellow;
+  margin-left: 5px;
+}
+
+.loginbtn {
+  float: right;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.loginIcon {
+  margin-top: 5px;
+  float: right;
+  margin-right: 5px;
+}
+
+.loginbtn::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: rgb(1, 90, 1);
+  transition: width .3s;
+}
+
+.loginbtn:hover::after {
+  width: 100%;
+}
+
+.regbtn {
+  float: left;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.regIcon {
+  margin-top: 2px;
+  margin-left: 5px;
+  float: right;
+}
+
+.regbtn::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: rgb(0, 110, 183);
+  transition: width .3s;
+}
+
+.regbtn:hover::after {
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+
+.place {
+  font-size: 14px;
+}
+
+label.di {
+  width: max-content;
+  color: purple;
+  font-size: 14px;
+  border-bottom:0.5px solid purple;
+  margin: 4px 0;
+  font-weight: 600 ;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.star {
+  color: tomato;
+}
+
+.username {
+  font-size: 14px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+form {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 5s ease-in-out;
+}
+
+label.pform {
+  width: max-content;
+  color: tomato;
+  font-size: 14px;
+  border-bottom:0.5px solid tomato;
+  margin: 4px 0;
+  font-weight: 600;
+}
+
+input , textarea{
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+form.label {
+  color:tomato;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 12px;
+  color: rgb(45, 45, 45);
+}
+
+.submitButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  padding: 2px;
+  color:white;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+/* New styles for React-Leaflet */
+
+.leaflet-control-geocoder {
+  height: 40px;
+  border-radius: 20px;
+  min-width: 200%;
+  left: -500px;
+  top: 5px;
+}
+
+.leaflet-control-geocoder-form {
+  font-size: 15px;
+  border-radius: 20px;
+  height: 40px;
+}
