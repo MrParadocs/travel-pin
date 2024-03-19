@@ -1,0 +1,171 @@
+.change-style {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: .6rem;
+    left: .6rem;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    height: 2.5rem;
+    width: 15rem;
+    border: none;
+    border-radius: 4rem;
+    outline: none;
+}
+
+.card {
+    width: 20rem;
+    height: 250px;
+    color: #333;
+    font-family: 'Poppins';
+    display: flex;
+    padding: .5rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.place {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    float: left;
+    margin-right: auto;
+    font-weight: 500;
+
+}
+
+label.di {
+    width: max-content;
+    color: #35A29F;
+    font-size: 14px;
+    border-bottom: 0.1rem solid;
+    margin: 4px 0;
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+
+.star {
+    color: #ffbf00;
+    padding-right: 0.5rem;
+    float: left;
+    font-size: 1.25rem;
+    margin-right: auto;
+}
+
+.username {
+    color: #35A29F;
+    float: left;
+    margin-right: auto;
+    font-size: 14px;
+
+}
+
+.date {
+    // color: #35A29F;
+    float: left;
+    margin-right: auto;
+    font-size: 0.8rem;
+}
+
+form {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 3s ease-out;
+    padding: 1rem;
+}
+
+label.pform {
+    width: max-content;
+    color: #35A29F;
+    font-size: 1rem;
+    border-bottom: 0.5px solid #35A29F;
+    margin: 4px 0;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    color: #333;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-family: 'Poppins';
+    background: transparent;
+    border-bottom: 1px solid gray;
+}
+
+select {
+    padding: 0.2rem;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-bottom: 0.01rem solid #333;
+    outline: none;
+}
+
+form.label {
+    color: #35A29F;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 0.9rem;
+    color: #3333338d;
+}
+
+.submitButton {
+    border: none;
+    padding: .4rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: #35A29F;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s ease-out;
+    margin-bottom: -1rem;
+
+    &:hover {
+        filter: drop-shadow(0 0 0.5rem #97FEED);
+    }
+}
+
+.mapboxgl-popup-content {
+    width: 93%;
+}
+
+.mapboxgl-popup-close-button {
+    padding: 0.5rem;
+    color: #333;
+    font-size: 1.8rem;
+    padding: .5rem;
+    margin-right: .5rem;
+
+    &:hover {
+        color: #C70039;
+        background: transparent;
+    }
+}
+
+.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+    background-color: #fff;
+    background-image: url(../../Imgsvg/arrow-up.svg) !important;
+}
+
+.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+    background-color: #fff;
+    background-image: url(../../Imgsvg/arrow-down.svg) !important;
+}
+
+.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+    background-color: rgb(242, 243, 244);
+    background-image: url(../../Imgsvg/compass.svg) !important;
+    cursor: pointer;
+}

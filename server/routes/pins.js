@@ -1,8 +1,9 @@
-const router = require('express').Router();
-const Pin = require('../models/Pin')
+import express from 'express'
+import Pin from '../models/Pin.js'
 
+const router = express.Router();
 //create Pin
-router.post("/",async (req, res) => {
+router.post("/", async (req, res) => {
     const newPin = new Pin(req.body)
     try {
         const savedPin = await newPin.save();
@@ -34,4 +35,4 @@ router.delete("/:id", async (req, res) => {
     }
 })
 
-module.exports = router;
+export default router;

@@ -1,0 +1,83 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem;
+    background: #242424;
+    border-bottom: 0.01rem solid #cccccc89;
+    height: 2.65rem;
+    position: sticky;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 2.75rem;
+        font-weight: 600;
+        transition: 0.3s ease-out;
+        background-image: linear-gradient(to right,
+                #7F167F,
+                #B3005E,
+                #E90064,
+                #FF5F9E,
+                #E90064,
+                #B3005E,
+                #7F167F );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+        background-size: 200%;
+        animation: bg-animate 3s linear infinite;
+
+        .icon {
+            font-size: 2.65rem;
+            color: #ea1179;
+        }
+
+        &:hover {
+            color: #ffbf00;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+
+        .link {
+            display: inline-block;
+            border-bottom: 0.1rem solid transparent;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 1.2rem;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 0.1rem;
+                background: linear-gradient(to right, #900C3F, #C70039, #F94C10, #F8DE22);
+                transition: 0.3s ease-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            &:hover {
+                color: #ffbf00;
+            }
+        }
+    }
+}
+
+@keyframes bg-animate {
+    from {
+        background-position: 0 center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}

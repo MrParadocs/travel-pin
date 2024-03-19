@@ -1,13 +1,6 @@
-const mongoose = require('mongoose');
+import mongoose, { mongo } from "mongoose"; 
 
-const { Schema } = mongoose;
-
-const requiredNumber = {
-    type: Number,
-    required: true,
-  };
-
-const userPin = new Schema({
+const userPin = new mongoose.Schema({
     username: {
         type: String,
         require: true,
@@ -39,4 +32,6 @@ const userPin = new Schema({
     timestamps: true,
   });
 
-  module.exports = mongoose.model('Pin',userPin);
+  const Pin = mongoose.model('Pin', userPin)
+
+  export default Pin;

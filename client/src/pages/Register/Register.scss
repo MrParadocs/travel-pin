@@ -1,0 +1,121 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem 2rem;
+
+    .left {
+        padding: 2rem;
+        flex: 1;
+
+        span {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 0.25rem;
+            transition: 0.3s ease-out;
+            background: linear-gradient(to left,
+                    #900C3F,
+                    #C70039,
+                    #F94C10,
+                    #F8DE22,
+                    #F94C10,
+                    #C70039,
+                    #900C3F,
+                );
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            // white-space: nowrap;
+            -webkit-text-fill-color: transparent;
+            background-size: 200%;
+            animation: span-animate 3s linear infinite;
+        }
+
+        .icon {
+            font-size: 8rem;
+            color: #F94C10;
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 50%;
+
+            .password-component{
+                position: relative;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 1rem;
+
+                .pwd-icon{
+                    position: absolute;
+                    right: 0.1rem;
+                    top: 6.4rem;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                }
+
+                .active{
+                    color: #F94C10;
+                    filter: drop-shadow(0 0 1rem #f94c10);
+                }
+            }
+            
+            input {
+                width: 100%;
+                font-size: 1.25rem;
+                padding: 1rem;
+                color: #fff;
+                outline: none;
+                background: transparent;
+                border: none;
+                border-bottom: 0.1rem solid transparent;
+                border-image: linear-gradient(0.25turn, #C70039, #F31559, #FF6000);
+                border-image-slice: 1;
+
+                &::placeholder {
+                    color: #ccc;
+                    text-transform: capitalize;
+                }
+            }
+
+            button {
+                border: none;
+                cursor: pointer;
+                margin-top: 1rem;
+                padding: 1rem;
+                width: 50%;
+                font-size: 1rem;
+                background: #F94C10;
+                transition: .3s ease-out;
+                letter-spacing: 0.1rem;
+
+                &:hover {
+                    background: #F49D1A;
+                    filter: drop-shadow(0 0 0.65rem #F49D1A);
+                }
+            }
+        }
+
+    }
+}
+
+@keyframes span-animate {
+    from {
+        background-position: 0 center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}

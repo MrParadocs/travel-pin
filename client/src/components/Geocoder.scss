@@ -1,0 +1,35 @@
+.mapboxgl-ctrl-geocoder {
+   height: 2.5rem;
+   border-radius: 4rem;
+   min-width: 22rem;
+   border: none;
+   outline: none;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+   font-family: 'poppins';
+   font-size: 15px;
+   border-radius: 4rem;
+   outline: none;
+   border: none;
+   height: 2.5rem;
+}
+
+.mapboxgl-ctrl-geocoder--icon-search {
+   margin-top: 0.1rem;
+   margin-left: 0.2rem;
+}
+
+.mapboxgl-ctrl-geocoder--icon-close {
+   margin-top: 0.4rem;
+   margin-right: 0.2rem;
+}
+
+.mapboxgl-ctrl-geocoder--suggestion-title{
+   font-family: 'poppins';
+   font-size: 1rem;
+}
+.mapboxgl-ctrl-geocoder--suggestion-address{
+   font-family: 'poppins';
+   font-size: .8rem;
+}
